@@ -3,7 +3,9 @@
     <m-header></m-header>
     <!-- 路由匹配到的组件将渲染在这里 -->
     <tab></tab>
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 

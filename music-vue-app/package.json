@@ -20,7 +20,8 @@
     "vconsole": "^3.0.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
-    "better-scroll": "^0.1.15"
+    "better-scroll": "^0.1.15",
+    "axios": "^0.17.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -64,6 +65,7 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
+    "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
