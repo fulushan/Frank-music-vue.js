@@ -31,7 +31,9 @@
           </div>
         </div>
     </div>
-
+      <div class="loading-container" v-show="!discList.length">
+        <loading></loading>
+      </div>
     </scroll>
     <router-view></router-view>
   </div>
@@ -42,6 +44,7 @@
   import {ERR_OK} from '../../api/dataConfig'
   import Slider from '../../base/slider/slider'
   import Scroll from '../../base/scroll/scroll'
+  import Loading from '../../base/loading/loading'
 
   export default {
     data () {
@@ -79,7 +82,8 @@
     },
     components: {
       Slider,
-      Scroll
+      Scroll,
+      Loading
     }
   }
 </script>
@@ -139,5 +143,11 @@
     .desc{
       color: $color-text-d
     }
+  .loading-container{
+    position: absolute
+    width: 100%
+    top: 50%
+    transform: translateY(-50%)
+  }
 
 </style>
